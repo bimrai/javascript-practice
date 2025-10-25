@@ -24,3 +24,6 @@ console.log(bimAccount)
 
 bimAccount.deposit(50)
 console.log(bimAccount)
+
+bimAccount.deposit(-50) // testing error  
+console.log(bimAccount)
