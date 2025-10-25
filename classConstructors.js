@@ -27,3 +27,7 @@ console.log(bimAccount)
 
 bimAccount.deposit(-50) // testing error  
 console.log(bimAccount)
+
+console.log(`Current Account: ${bimAccount.accountHolder}`)
+console.log(`Account Number: ${bimAccount.accountNumber}`)
+console.log(`Current Balance: £${bimAccount.balance}`)
