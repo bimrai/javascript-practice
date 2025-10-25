@@ -17,7 +17,7 @@ class bankAccount {
     
     withdraw(amt) {
         if(amt > this.balance) {
-            console.log("Warning: Insufficient Amount")
+            console.log("Warning: Insufficient Funds")
         } else {
             this.balance -= amt
             console.log(`You have withdrawn £${amt} out from your account.`)
@@ -51,6 +51,8 @@ console.log(bimAccount.balance)
 const anaAccount = new bankAccount("12345", "Ana De Armas")
 console.log(anaAccount)
 
-anaAccount.deposit(500);
+anaAccount.deposit(1100);
+anaAccount.withdraw(1200);
 anaAccount.withdraw(100);
+
 console.log(anaAccount)
