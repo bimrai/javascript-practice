@@ -1,4 +1,4 @@
-class bankAccount {
+class BankAccount {
     constructor(accountNumber, accountHolder, balance = 0) {
         this.accountHolder = accountHolder;
         this.accountNumber = accountNumber;
@@ -27,7 +27,7 @@ class bankAccount {
 
 }
 
-const bimAccount = new bankAccount("123abc", "Bim Rai")
+const bimAccount = new BankAccount("123abc", "Bim Rai")
 
 // deposit test
 bimAccount.deposit(100)
@@ -48,7 +48,7 @@ console.log(`Current Balance: £${bimAccount.balance}`)
 bimAccount.withdraw(25)
 console.log(bimAccount.balance)
 
-const anaAccount = new bankAccount("12345", "Ana De Armas")
+const anaAccount = new BankAccount("12345", "Ana De Armas")
 console.log(anaAccount)
 
 anaAccount.deposit(1100);
