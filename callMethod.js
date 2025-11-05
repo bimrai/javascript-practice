@@ -9,6 +9,7 @@ class Gamer {
     }
     
     intro(faveGame = "Halo") {
+        console.log("FROM: ", this)
         return `Hi my name is ${this.firstName} and my favourite game is ${faveGame}!`
     }
 }
@@ -29,6 +30,7 @@ class Gamer {
     }
     
     intro(faveGame = "Halo") {
+        console.log("FROM: ", this)
         return `Hi my name is ${this.firstName} and my favourite game is ${faveGame}!`
     }
 }
@@ -45,6 +47,7 @@ const sam = {
     city: "Village Hidden in the Sound",
     platform: "PC and PS5",
     game: function () {
+        console.log("FROM: ", this)
         return `I am ${this.name} and I game on ${this.platform}`
     } 
 }
