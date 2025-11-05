@@ -60,3 +60,49 @@ const bim = {
 
 console.log(sam.game(sam))
 console.log(sam.game.call(bim))
+
+// -----------------------------------------------------------------------------------------------
+//                                         Practice 3
+// -----------------------------------------------------------------------------------------------
+
+const soldier = {
+    phrase: function() {
+        return `I'm ${this.rank} ${this.name}. State your name and rank!`
+    },
+    report: function() {
+        return `${this.rank} ${this.name} sir!`
+    },
+    dismiss: function() {
+        return `You are all dismissed!`
+    }
+}
+
+const cptLarkey = {
+    name: "Larkey",
+    rank: "Captain",
+}
+
+const pvtGurung = {
+    name: "Gurung",
+    rank: "Private"
+}
+
+const pvtRai = {
+    name: "Rai",
+    rank: "Private"
+}
+
+const ssgtSahan = {
+    name: "Sahan",
+    rank: "Staff Sergeant"
+}
+
+console.log(soldier.phrase.call(cptLarkey))
+console.log(soldier.report.call(ssgtSahan))
+console.log(soldier.report.call(pvtGurung))
+console.log(soldier.report.call(pvtRai))
+console.log(soldier.dismiss())
+
+// -----------------------------------------------------------------------------------------------
+//                                         Practice n
+// -----------------------------------------------------------------------------------------------
