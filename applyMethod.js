@@ -41,3 +41,23 @@ max(5, 10, 15, 20)
 console.log("------------------------------------------------")
 maxOld(1, 2, 3, 4)
 maxNew(5, 6, 7, 8)
+
+// ------------------------------------------------------------------------------------
+//                                   Practice 2
+// ------------------------------------------------------------------------------------
+
+
+const walle = {
+    firstName: "Wall E",
+    greet: function (phrase, tone) {
+        console.log(`${this.firstName} says: "${phrase}" (in a ${tone} tone).`);
+    }
+}
+
+const eve = {
+    firstName: "Eve",
+};
+
+walle.greet.call(eve, "Wall E","robotic Wall E")
+console.log("Apply and call can work in similar ways. However call is straight forward, apply is an array based method.")
+walle.greet.apply(eve, ["Wall E","robotic Wall E"])
