@@ -43,3 +43,30 @@ console.log(bimRai.lastName)
 console.log(bimRai.fullName)
 bimRai.lastName = "Rai"
 console.log(bimRai.fullName)
+
+
+// -----------------------------------------------------------------------------------------------
+//                                         Practice 2
+// -----------------------------------------------------------------------------------------------
+
+class Pet {
+    constructor(name, animal) {
+        this.name = name;
+        this.animal = animal;
+    }
+    
+    get pet() {
+        return `Pet Name: ${this.name}, Animal: ${this.animal}`
+    }
+    
+    set pet(name) {
+        const newName = name;
+        this.name = newName;
+        return `New Pet Name: ${newName}`
+    }
+}
+
+const skipDog = new Pet("Buddy", "Dog")
+console.log(skipDog.pet)
+skipDog.pet = "Skip"
+console.log(skipDog.pet)
