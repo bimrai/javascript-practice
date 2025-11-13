@@ -7,6 +7,7 @@ const playstation = {
     platform: "PlayStation",
     company: "Sony", 
     on: function() {
+        // console.log("THIS IS: ", this) <-- check test on what and where its accessed from
         console.log(`Accessing ${this.system}:`);
         return `${this.platform} launching... ${this.platform} finished launching.`
     }
@@ -21,7 +22,7 @@ const xbox = {
 const pc = {
     system: "PC",
     platform: "Steam",
-    company: "valve"
+    company: "Valve"
 }
 
 console.log(playstation.on())
