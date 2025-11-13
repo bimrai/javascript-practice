@@ -28,5 +28,14 @@ console.log(playstation.on())
 console.log(playstation.on.call(xbox))
 console.log(playstation.on.call(pc))
 
-const accessXbox = playstation.on.bind(xbox);
+console.log("-----------------------------------------------------------")
 
+// this will essentially do the same thing without making it 
+
+const accessPlaystation = playstation.on.bind(playstation);
+const accessXbox = playstation.on.bind(xbox);
+const accessPc = playstation.on.bind(pc);
+
+console.log(accessPlaystation());
+console.log(accessXbox());
+console.log(accessPc());
