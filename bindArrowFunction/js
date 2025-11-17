@@ -1,0 +1,25 @@
+// bind set intervals practice but with arrow functions
+
+class Naruto {
+    constructor(name, catchPhrase) {
+        this.name = name;
+        this.catchPhrase = catchPhrase;
+    }
+    
+    greet() {
+        console.log(`Naruto: My name is ${this.name} and I'm going to be Hokage one day...`);
+        
+        setTimeout(() => {
+            console.log(`Naruto: ${this.catchPhrase}`);
+        }, 2000);
+        
+    }
+}
+
+const naruto = new Naruto("Naruto Uzumaki", "Dattebayo!");
+naruto.greet()
+
+
+// simple example:
+// const add = (x, y)  => x + y
+// console.log(add(2, 5))
