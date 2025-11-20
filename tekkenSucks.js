@@ -16,3 +16,19 @@ function BadGames(game) {
 
 const tekken = new BadGames("Tekken");
 console.log(tekken);
+
+// class version 
+
+class BadGames {
+    constructor(game, rating) {
+        this.game = game;
+        this.rating = rating;
+    }
+    
+    review() {
+        return `Game: ${this.game} | Rating: ${this.rating}`
+    }
+}
+
+const tekken = new BadGames("Tekken", 2)
+console.log(tekken)
