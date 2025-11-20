@@ -7,3 +7,12 @@ if (tekkenSucks == true) {
 } else {
     "Tekken still sucks."
 }
+
+// constructor function
+
+function BadGames(game) {
+    this.game = game;
+}
+
+const tekken = new BadGames("Tekken");
+console.log(tekken);
