@@ -30,5 +30,11 @@ class BadGames {
     }
 }
 
+// one way to access
 const tekken = new BadGames("Tekken", 2)
-console.log(tekken)
+console.log(tekken.review())
+
+// another way to access, both output same thing
+const tekkenReview = tekken.review()
+console.log(tekkenReview)
+
