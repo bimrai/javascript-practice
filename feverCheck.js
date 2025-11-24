@@ -15,3 +15,11 @@ if(sick) {
 } else {
     console.log("You are healthy");
 }
+
+let daysOfFever = 4
+
+if (daysOfFever >= 3) {
+    console.log("Seek medical attention!")
+} else {
+    console.log("Get good rest and stay hydrated.")
+}
