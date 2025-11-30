@@ -22,7 +22,7 @@ fetch(`${base_URL}/1`)
 
 
 
-// for pokemon, flattening chain code or callback hell
+// callback hell
     
 fetch(`${base_URL}/1`)
     .then((res1) => {
@@ -45,7 +45,7 @@ fetch(`${base_URL}/1`)
     .catch((err) => console.log("Error!", err));
 
 
-// fix for this is promise chaining
+// fix by flattening previous callback hell with promise chaining
 
 fetch(`${base_URL}/1`).then((res1) => {
     console.log("Response 1", res1);
@@ -61,4 +61,5 @@ fetch(`${base_URL}/1`).then((res1) => {
 })
 .then((res4) => {
     console.log("Response 4", res4)
+
 });
