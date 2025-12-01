@@ -24,6 +24,7 @@ fetch(`${base_URL}/1`)
 // but with cleaner and more readable syntax.
 // each "await" pauses the function until that fetch resolves,
 // so the next line only runs after the previous request finishes.
+// they both do same thing, makes 4 api calls
 
 async function getFourPokemons() {
     const res1 = await fetch(`${base_URL}/1`)
