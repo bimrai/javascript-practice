@@ -40,5 +40,5 @@ fetch(`${base_URL}/1`)
     console.log("Response 4", res4)
 })
 .catch((err) => {
-    console.log("In the catch!", err)
+    console.log("In the catch!", err) // this error works amongst all the promises and no need to repeat catch for each .then
 });
