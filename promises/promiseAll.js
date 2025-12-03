@@ -35,5 +35,7 @@ async function getLotsOfPokemon() {
     }
 }
 
+getLotsOfPokemon()
+
 
   
