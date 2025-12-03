@@ -14,11 +14,26 @@ const manyFetchCalls = [
     // fetch("http://nope.nope") <- this is just a test for catching error
 ];
 
-Promise.all(manyFetchCalls).then((results) => {
+// ====== the promise method way ======
+Promise.all(manyFetchCalls)
+.then((results) => {
     console.log("Promise.all() is all done and resolved!");
     console.log(results);
-}).catch(err => {
+})
+.catch(err => {
     console.log("ONE or MORE Promise in array was rejected.", err)
 });
+
+// ====== async method way ======
+async function getLotsOfPokemon() {
+    try {
+        const results = await Promise.all(manyFetchCalls);
+        console.log("Promise.all() is all done and resolved!");
+        console.log(results);
+    } catch(e) {
+        console.log("ONE or MORE Promise in array was rejected.", e)
+    }
+}
+
 
   
