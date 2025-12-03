@@ -61,5 +61,6 @@ async function getPokemon(num) {
 }
 
 getPokemon(5) // 5 as example
+getPokemon(7) // 7 as example too, showing you can pull any number and if valid will return
 
 console.log("Fetching...")
