@@ -57,3 +57,20 @@ console.log(rejected);
 (3) [{...}, {...}, {...}] // this one should showcase all fulfilled and rejected
 (2) [{...}, {...}] // this one should showcase only the two valid github user accounts for bimR and latifT filtered out
 [{...}] // the final one is the only rejected filtered out one via badURL "https://nope.nope" as mentioned earlier
+
+// they should tell you reason of rejection, something like this for badURL:
+[{…}]
+0
+: 
+reason
+: 
+TypeError: Failed to fetch at allSettledPractice (<anonymous>:9:18) at <anonymous>:1:1
+status
+: 
+"rejected"
+[[Prototype]]
+: 
+Object
+length
+: 
+1
