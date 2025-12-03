@@ -1,3 +1,6 @@
+// this method is unordered. if you want ordered, you call next fetch or .then within the first. Essentially its nested so it rolls out in order. 
+// however this method wont always work in order, it pulls whatever it can and comes out in whatever order it fetched first 
+
 // promises method:
 const base_URL = "https://pokeapi.co/api/v2/pokemon";
 
